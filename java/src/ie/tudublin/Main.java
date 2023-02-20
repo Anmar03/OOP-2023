@@ -2,6 +2,11 @@ package ie.tudublin;
 
 public class Main
 {
+	public static void bugZap()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new BugZap());
+    }
 
 	public static void helloProcessing()
 	{
@@ -13,12 +18,6 @@ public class Main
 	{
 		String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new Loops());
-    }
-
-	public static void bugZap()
-	{
-		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new BugZap());
     }
 
 	public static void starMap()
@@ -35,7 +34,7 @@ public class Main
 		penny.setName("Penny");
 		penny.speak();
 
-		starMap();
+		bugZap();
 	}
 	
 }
